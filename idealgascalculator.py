@@ -64,7 +64,7 @@ volume_selection['values'] = ("dm3",
 
 volume_selection.grid(column=2, row=2)
 
-def calculate_from_inputs():
+def calculate_from_inputs() -> int | str:
     """Calculates an output based on user selection. 
     First, the input values are retreived as floats. Code first checks
     that input is a float and converts to a float. 
@@ -141,7 +141,7 @@ def calculate_from_inputs():
     # Display's the result in the label
     result_label.config(text=result)
 
-def clear_entries():
+def clear_entries() -> None:
     """Deletes entries so that user can restart a calculation without needing
     to restart the program or manually change values."""
     pressure_entry.delete(0, END)
