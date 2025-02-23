@@ -12,7 +12,7 @@ moles, or the temperature. The calculate function has an error check that ensure
 
 The unit combinations are also checked: only valid unit selections are allowed and the function also checks that the selections are valid. The calculation requires the correct gas constant, r, which is provided in a dictionary that the function checks. If the unit combination is in the dictionary, the function calls the value from that key and uses it in the calculation. Where the unit combination does not exist, the user is reminded to select a valid combination.
 
-For example, if the user leaves pressure blank, the code will know to calculate pressure, but if the user does not select the unit for pressure this throws and error and the user is reminded to select the unit they want pressure to be calculted in. 
+The program also ensures units are selected for pressure, and volume so that the correct unit is displayed for the calculation. For example, if the user leaves pressure blank, the code will know to calculate pressure, but if the user does not select the unit for pressure this throws and error and the user is reminded to select the unit they want pressure to be calculted in. 
 
 Once all of the conditions are satisfied, the calculate function executes and the result is displayed in the UI.
 
