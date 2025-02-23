@@ -17,3 +17,5 @@ The program also ensures units are selected for pressure, and volume so that the
 Once all of the conditions are satisfied, the calculate function executes and the result is displayed in the UI.
 
 The UI has three buttons: quit, calculate, and clear. The quit button runs the tkinter function that closes the window. The calculate button executes the calculate function, and the Clear button executes the clear function so all user inputs are empty and all user unit selections are empty.
+
+The calculator only uses metric units and is not coded for imperial units. This is because in science, we use SI units and not imperial units; though the dictionary can be updated with imperial unit combinations with the associated r values. Due to the large number of unit combinations and associated r values, if more unit combinations and r values were to be included in the calculator, the dictionary could be removed and a csv file containing the unit combinations and r values could be used instead. To hard code a dictionary with all of the associated keys and values would dwarf the lines of code, making readability difficult.
